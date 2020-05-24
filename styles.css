@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2edf3;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.statCard:nth-child(3n+2) {
+    background-image: linear-gradient(to right, #88c7f4,#008bff);}
+
+.statCard:nth-child(3n+1) {
+    background-image: linear-gradient(to right, #ffbd99, #ff8696);
+}
+.statCard:nth-child(3n+3) {
+    background-image: linear-gradient(to right, #78d8d0,#0ed1ba);
+}
+.statCard:nth-child(3n+2){
+    margin: 0 50px;
+}
+
+
+.statCard{
+    padding: 40px;
+    min-width: 310px;
+    width: 100%;
+    max-width: 600px;
+
+    overflow:hidden;
+    border-radius: 10px;
+    color: white;
+
+    position: relative;
+}
+
+.statCard::before,  .statCard::after {
+    content: '';
+    opacity:0.2;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+}
+
+.statCard::before{
+
+    height: 210px;
+    width: 210px;
+    right: -70px;
+    top: -20px;
+}
+
+.statCard::after{
+    height: 250px;
+    width: 250px;
+    right: -30px;
+    bottom: -110px;
+}
+
+.statItemTitle{
+    text-align: justify;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statItemName{
+    text-transform:capitalize;
+    vertical-align: middle;
+}
+
+.statItemIcon{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+.statItemIcon{
+    fill: white;
+}
+.statItemValue{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+.statConclusion{
+    font-size: 0.8em;
+
+}
